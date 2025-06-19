@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros salon social</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="contenedor" id="kathe">
+        <h1>Registro de Solicitudes del Salón Social</h1>
+        <p id="vacio">No hay solicitudes</p>
+        <div class="tabla-container">
+            <table id="tabla"> 
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cedula</th>
+                    <th>Apartamento</th>
+                    <th>Fecha</th>
+                    <th>Hora de inicio</th>
+                    <th>Hora de finalización</th>
+                    <th>Motivo</th>
+                    <th>Programado</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="botones">
+            <button onclick="actualizar()">Actualizar</button>
+            <a href="Index.html">
+                <button >Crear nueva solicitud</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="tabla.js"></script>
+</body>
+
+</html>

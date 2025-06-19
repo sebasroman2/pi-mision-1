@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon social</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+     <div class="contenedor">
+        <h1>Gestión de Solicitudes del Salón Social</h1>
+        <form onsubmit="enviarsolicitud()">
+            <div class="caja">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Pepito Perez" required>
+            </div>
+
+            <div class="caja">
+                <label for="cedula">Cedula:</label>
+                <input type="number" name="cedula" id="cedula" placeholder="1234567890" required>
+            </div>
+
+            <div class="caja">
+                <label for="apartamento">Apartamento no.:</label>
+                <input type="number" name="apartamento" id="apartamento" placeholder="45" required>
+            </div>
+
+            <div class="caja">
+                <label for="fecha">Fecha solicitada:</label>
+                <input type="date" name="fecha" id="fecha" placeholder="15/08/2025" required>
+            </div>
+
+            <div class="caja">
+                <label for="hora_i">Hora de incio:</label>
+                <input type="time" name="hora" id="hora_i" placeholder="7:00" required>
+            </div>
+
+            <div class="caja">
+                <label for="hora_f">Hora de finalización:</label>
+                <input type="time" name="hora" id="hora_f" placeholder="7:00" onchange=validarHora() required>
+            </div>
+
+            <div class="caja">
+                <label for="motivo">Motivo del evento:</label>
+                <input type="text" name="motivo" id="motivo" placeholder="Cumpleaños" required>
+            </div>
+
+            <input type="submit" value="Enviar Solicitud" >
+
+        </form>
+
+        <a href="./registro.html">
+            <button onclick="ver_registro()">Ver registro de Solicitudes</button>  
+        </a>
+        
+        <div id="resultado"></div> 
+
+    </div>
+
+    
+
+    <script src="Main.js"></script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #96c1dd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url("https://i0.wp.com/albaterra.co/wp-content/uploads/2022/11/Salon-social-kiosko-Albaterra.jpg?fit=1620%2C911&ssl=1");
+}
+
+.contenedor {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 45px rgba(0, 0, 0, 0.5);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+#kathe {
+    width: 80vw;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1665c0;
+}
+
+.caja {
+    display: flex;
+}
+
+label {
+    display: block;
+    width: 30%;
+    margin-top: 15px;
+    color: #555;
+    text-align: end;
+    padding-right: 30px;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #131313;
+    border-radius: 6px;
+}
+
+button,
+input[type='submit'] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: rgb(244, 236, 236);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover,
+input[type='submit']:hover {
+    background-color: #2980b9;
+}
+
+.resultado {
+    background-color: #c10c0c;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 45px rgba(0, 0, 0, 0.5);
+    width: 80vw;
+    gap: 20px;
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e61f1f;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid black;
+}
+
+table {
+    display: none;
+    width: 100%;
+    table-layout: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    width: 100%;
+}
+
+#vacio {
+    font-family: cursive;
+    font-size: x-large;
+    text-align: center;
+    color: blueviolet;
+    display: block;
+    padding: 20px;
+}
+
+#eliminar {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+@media (max-width: 720px) {
+    body {
+        height: auto;
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .contenedor, #kathe {
+        width: 60vw;
+    }
+
+    .caja {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    label, input {
+        width: 100%;
+        text-align: start;
+    }
+
+    input[type='submit'] {
+        text-align: center;
+    }
+
+    button,
+    input[type='submit'] {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .botones {
+        flex-direction: column;
+        width: 93%;
+    }
+}
